@@ -5,6 +5,7 @@ const Bodies = Matter.Bodies;
 var engine, world;
 var box1, box2, box3, box4, box5;
 var Chao;
+var Plataforma;
 var pig1, pig2;
 var log1, log2, log3, log4;
 var bird1;
@@ -29,6 +30,8 @@ function setup(){
     log3 = new Log(845,130,150,PI/7);
     log4 = new Log(945,130,150,-PI/7); 
     bird1 = new Bird(100,100,50,50);
+    Plataforma = new Ground(150,305,300,170);
+
 }
 
 function draw(){
@@ -49,4 +52,5 @@ function draw(){
     log3.display();
     log4.display();
     bird1.display();
+    Plataforma.display();
 }
